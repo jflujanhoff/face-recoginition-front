@@ -23,6 +23,7 @@ class Register extends React.Component {
   }
 
   onSubmitRegister = () => {
+    console.log("before register");
     fetch('https://simple-face-recognition-api.herokuapp.com/register', {
       method:'post',
       headers:{'Content-Type':'application/json'},
@@ -33,6 +34,7 @@ class Register extends React.Component {
       })
     })
     .then(response => {
+      console.log("after register");
       return response.json();
     })
     .then(user => {
