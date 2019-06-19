@@ -44,7 +44,7 @@ class App extends Component {
   //   fetch('http://localhost:3000')
   //     .then(response => response.json())
   //     .then(data => console.log(data));
-  // }
+  // } Hello
 
   faceDetectionPattern = (data) => {
     // const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
@@ -81,7 +81,7 @@ class App extends Component {
   onButtonSubmit = () => {
     console.log('Click');
     this.setState({imageUrl:this.state.input});
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://simple-face-recognition-api.herokuapp.com/imageurl', {
       method:'post',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
@@ -91,7 +91,7 @@ class App extends Component {
     .then(responseApi => responseApi.json())
     .then(response => {
       if (response) {
-        fetch('http://localhost:3000/image', {
+        fetch('https://simple-face-recognition-api.herokuapp.com/image', {
           method:'put',
           headers:{'Content-Type': 'application/json'},
           body: JSON.stringify({
