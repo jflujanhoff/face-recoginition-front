@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ParticlesBackground from './components/particles/Particles';
 import Navigation from './components/navigation/Navigation';
-import SignIn from './components/SignIn/SignIn';
+import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import Rank from './components/rank/Rank';
 import ImageLinkForm from './components/imagelinkform/ImageLinkForm';
@@ -138,7 +138,7 @@ class App extends Component {
             />
         </div>;
     } else if (this.state.route === 'signin') {
-      viewEnter = <SignIn
+      viewEnter = <Signin
                     inputRouter={this.inputRouter}
                     inputUser={this.inputUser}
                   />;
