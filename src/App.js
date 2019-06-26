@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ParticlesBackground from './components/particles/Particles';
 import Navigation from './components/navigation/Navigation';
-import Signin from './components/Signin/Signin';
+import Signin from './components/SignIn/Signin';
 import Register from './components/Register/Register';
 import Rank from './components/rank/Rank';
 import ImageLinkForm from './components/imagelinkform/ImageLinkForm';
